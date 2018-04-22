@@ -130,6 +130,7 @@ class SiteController extends Controller
     {
         return $this->render('say', ['message' => $message]);
     }
+    
     public function actionEntry()
     {
         $model = new EntryForm();
@@ -144,5 +145,5 @@ class SiteController extends Controller
             // либо страница отображается первый раз, либо есть ошибка в данных
             return $this->render('entry', ['model' => $model]);
         }
-    }
+    }  
 }
